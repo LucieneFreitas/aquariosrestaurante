@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+  --primary-color: #C73734;
+  --secondary-color: #E57373;
+  --text-color: #2b2b2b;
+  --text-color2: #545454;
+  --color-basic: #fff;
+
+  --text-gd: 64px;
+  --text-md: 36px;
+  --text-pq: 14px;
+}
+
+/*=======Mini Framework =====*/
+
+html, body {
+  height: 100%;
+}
+
+.max-width {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg{
+  background: url('img/bannerGradiente.jpg') no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.container{
+  max-width: 1330px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+}
+
+/*======= Menu =======*/
+.menu{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%
+}
+
+
+/*======= Logo =======*/
+.logo{
+  background: url('img/logo.png') no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 80px;
+  position: relative;
+  z-index:  9;
+}
+
+
+/*======= Textos =======*/
+.text-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text-gd{
+  font-size: var(--text-gd);
+}
+
+.text-md{
+  font-size: var(--text-md);
+}
+
+.text-pq{
+  font-size: var(--text-pq);  
+}
+
+.color-vermelho{
+  color: var(--primary-color);
+}
+
+.color-cinza{
+  color: var(--text-color);
+}
+
+/*====== Chamada =======*/
+.call{
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.left{
+  width: 50%;
+  min-height: 600px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2%;
+}
+
+.right{
+  width: 50%;
+  min-height: 600px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2%;
+}
+
+
+/*===== Imagem =======*/
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*======= Botão =======*/
+button{
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: var(--color-basic);
+  font-size: var(--font-size-pq);
+  border: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover{
+  border: 1px solid var(--primary-color);
+  background: #fff;
+  color: var(--primary-color);
+}
+
+/*======= Content =======*/
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 0 2%;
+  width: 100%;
+  min-height: 800px;
+}
+
+.down{
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+/*======= Título =======*/
+.titulo{
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/*======= Box =======*/
+.box{
+  width: 25%;
+  min-height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2%;
+}
+
+/*======= Info =======*/
+.info{
+  display: flex;
+}
+
+/*======= desktop-menu =======*/
+.desktop-menu ul{
+  display: flex;
+}
+
+.desktop-menu ul li{
+  padding: 0 25px;
+  list-style-type: none;
+}
+
+.desktop-menu ul li a{
+  text-decoration: none;
+  color: var(--text-color2);
+  font-size: 18px;
+}
+
+.desktop-menu ul li a:hover{  
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+
+/*======= Home =======*/
+#home .container{
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#home .right{
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#home .right h1{
+  text-align: end;
+}
+
+#home .right h2{
+  text-align: end;
+  margin-top: 20px;
+}
+
+#home .right p{
+  text-align: end;
+  margin-top: 20px;
+}
+
+#home .right button{  
+  margin-top: 30px;
+}
+
+//https://www.youtube.com/watch?v=p50m10CerEk
