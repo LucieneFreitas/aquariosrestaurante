@@ -5,22 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aquários Restaurante</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
+
 <body>
+
   <!--Home-->
   <header class="max-width bg" id="home">
     <div class="container">
       <div class="menu">
       <div class="logo"></div>
+      
       <div class="desktop-menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Menu</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#service">Serviços</a></li>
+          <li><a href="#menu">Menu</a></li>
           <li><a href="#">Contatos</a></li>
         </ul>
       </div>
+
+      <div class="mobile-menu" onclick="myFuction()">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#service">Serviços</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </div>
+
     </div>
     <div class="call">
       <div class="left">
@@ -34,11 +49,147 @@
       </div>
     </div>
   </div>
+  <button id="back-to-top"></button>
   </header>
 
   <!--About-->
   <section class="max-width bg" id="about">
-    <div class="container"></div>
+    <div class="container">
+      <div class="call">
+        <div class="left">
+          <span class="text-title color-vermelho">Sobre Nós</span>
+          <h2 class="text-md color-cinza">Nós cozinhamos a comida mais saborosa</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus aliquid odio repellat vel blanditiis reiciendis nesciunt in omnis voluptatem, praesentium inventore distinctio nihil vero recusandae veritatis aperiam quas tenetur? Reiciendis!            
+          </p>
+          <button>Saiba mais</button>
+        </div>
+        <div class="right">
+          <img src="img/salmon2.jpg" alt="">
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!--Service-->
+  <section class="max-width bg" id="service">
+    <div class="container">
+      <div class="content">
+        <div class="titulo">
+          <span class="text-title color-vermelho">Ofertas</span>
+          <h2 class="text-md color-cinza">Nossos serviços</h2>
+        </div>
+
+        <div class="down">
+
+          <div class="box">
+            <i class="fa fa-cutlery text-gd color-vermelho"></i>
+            <h2>A melhor comida</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non cum sunt rem saepe provident nisi fugit obcaecati, ipsam dolor reprehenderit ducimus pariatur fuga doloribus tempora, libero, amet dolorem nulla.
+            </p>
+          </div>
+
+          <div class="box">
+            <i class="fa fa-motorcycle text-gd color-vermelho"></i>
+            <h2>Entrega</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non cum sunt rem saepe provident nisi fugit obcaecati, ipsam dolor reprehenderit ducimus pariatur fuga doloribus tempora, libero, amet dolorem nulla.
+            </p>
+          </div>
+
+          <div class="box">
+            <i class="fa-solid fa-pizza-slice text-gd color-vermelho"></i>
+            <h2>Comida rápida</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non cum sunt rem saepe provident nisi fugit obcaecati, ipsam dolor reprehenderit ducimus pariatur fuga doloribus tempora, libero, amet dolorem nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--MENU-->
+ <section class="max-width bg" id="menu">
+    <div class="container">
+      <div class="content">
+        <div class="titulo">          
+          <h2 class="text-md color-cinza">Cardápio do dia</h2>
+        </div>
+
+        <div class="down">
+
+          <div class="box">
+            <img src="img/dourado.jpg"></img>
+            <h2 class="color-vermelho">Dourado frito</h2>
+            <p class="text-pq">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non cum sunt rem saepe provident nisi fugit obcaecati, ipsam dolor reprehenderit ducimus pariatur fuga doloribus tempora, libero, amet dolorem nulla.
+            </p>
+            <p>R$98,90</p>
+          </div>
+
+          <div class="box">
+            <img src="img/rolinho.jpg"></img>
+            <h2 class="color-vermelho">Rolinho de atum</h2>
+            <p class="text-pq">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non cum sunt rem saepe provident nisi fugit obcaecati, ipsam dolor reprehenderit ducimus pariatur fuga doloribus tempora, libero, amet dolorem nulla.
+            </p>
+            <p>R$15,90</p>
+          </div>
+
+          <div class="box">
+            <img src="img/tilapia.jpg"></img>
+            <h2 class="color-vermelho">Tilapia grelhada</h2>
+            <p class="text-pq">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate non cum sunt rem saepe provident nisi fugit obcaecati, ipsam dolor reprehenderit ducimus pariatur fuga doloribus tempora, libero, amet dolorem nulla.
+            </p>
+            <p>R$89,00</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Contato-->
+  <section class="max-width bg" id="contact">
+    <div class="container">
+      <div class="call">
+        <div class="left">
+        <span class="text-title color-vermelho">App</span>
+        <h2 class="text-md text-color">O aplicativo está disponível</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa asperiores, rerum obcaecati quasi consectetur harum, nemo laudantium aliquam quisquam cupiditate explicabo sunt molestias fugit. Debitis eligendi nemo dolorum? Id, omnis!
+        </p>
+        <div class="info">
+          <img src="" alt="">
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="container">
+      <img src="img/logo.png" alt="logo">
+      <p class="text-pq">Copyright 2024 <span class="color-vermelho">LF Developer</span>All Rights Reserved</p>
+      <p class="text-pq">Telefone: (21)3333-3333</p>
+    </div>
+  </footer>
+
+
+  <!--SCRIPT-->
+  <script>
+    //BOTÃO BACK-TO-TOP
+    var btn = document.querySelector("#back-to-top");
+
+    btn.addEventListener("click", function(){
+      window.scrollTo(0,0);
+    })
+  </script>
 </body>
 </html>
